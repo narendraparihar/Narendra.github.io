@@ -13,9 +13,8 @@
 }
 
 .max-width{
-    max-width: 1300px;
-    padding:0 80px;
-    margin:auto;
+    max-width: 100%;
+  
 }
 
 
@@ -35,39 +34,10 @@
     border-radius:4px;
     padding:3px;
     color:yellowgreen;
-    animation: name infinite 4s;
-    content: "NARENDRA";
+    background-image: url("skills_background.gif");
+    
 }
 
-@keyframes name{
- 
-     10%{
-       content:"N";
-     }
-     20%{
-        content:"NA";  
-     }
-     30%{
-        content:"NAR";  
-     }
-     40%{
-        content:"NARE";  
-     }
-     50%{
-        content:"NAREN";  
-     }
-     60%{
-        content:"NAREND";  
-     }
-     70%{
-        content:"NARENDR";  
-     }
-     80%{
-        content:"NARENDRA";  
-     }
-
-
-}
 
 
 
@@ -87,20 +57,41 @@
 .home{
     display:flex;
     background-color: rgb(10, 10, 10);
-    width: auto;
-    height: 100vh;
+    width:100%;
+    height: 100%;
     color: #fff;
     min-height: 500xpx;
     font-family: 'Ubuntu',sans-serif;
+    background-image: url("skills2bg.gif");
+    background-size: 10%;
    
+     
 }
-
 
 .home .max-width{
     width:auto;
-    width: 100%;
-    margin: auto 0 auto 40px;
+    width: 90%;
+    
+    display: flex;
 }
+
+
+.home-content{ 
+    width:50%;
+    float: left;
+    padding-top: 150px;  
+    padding-left: 50px;  
+}
+
+.mid-space{
+    width: 30%;
+}
+
+.img1{
+    width:20%;
+    float:right; 
+}
+
 
 
 .home-content .text-1{
@@ -110,6 +101,8 @@
     font-size:  75px;
     font-weight: 600;
     margin-left: -3px;
+    
+    
 }
 .home-content .text-3{
     font-size:  40px;
@@ -124,7 +117,6 @@
 
 
 .script:before{
-    
     animation: animate infinite 4s;
     content: ' Developer';
 }
@@ -141,18 +133,9 @@
     75%{
         content:" ML Ethusiastic";
     }
-
-
 }
 
-.container-fluid .image{
-    
-    float: right;
-    padding-left:-90px;
-    width: 400px;
-    padding-top: -50px;
-   
-}   
+
 
 
 
@@ -161,12 +144,31 @@
 /*responsive media query*/
 
 @media(max-width: 991px){
-    .max-width{     
-        padding:0 40px;
+    .home-content{
+        padding-top: 20px;
+    }
+    
+    .home-content .text-1{
+        font-size:  10px;
+    }
+    .home-content .text-2{
+        font-size:  50px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .home-content .text-3{
+        font-size:  15px;
+        margin: 5px 0;
     }
 
     .image{
-     image-rendering: optimizeQuality;
+       width: 160px;
+      
+       margin-left: 50px;
+    }
+
+    .mid-space{
+        width:5%;
     }
     .col{
         width:100%;
@@ -178,6 +180,15 @@
     }
 }
 
+
+@media(max-width:1024px){
+
+    .home{
+        width:100%;
+    }
+
+
+}
 
 /*about section*/
 
